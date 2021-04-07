@@ -1,0 +1,72 @@
+---------------- TIMING PROFILE ---------------------
+  Case        : noresm-gnu-ucx-mpich-container-7x128p-NF2000climo-f19_f19_mg17
+  LID         : 210406.181236
+  Machine     : container
+  Caseroot    : /opt/esm/archive/cases/noresm-gnu-ucx-mpich-container-7x128p-NF2000climo-f19_f19_mg17
+  Timeroot    : /opt/esm/archive/cases/noresm-gnu-ucx-mpich-container-7x128p-NF2000climo-f19_f19_mg17/Tools
+  User        : jeani
+  Curr Date   : Tue Apr  6 18:12:39 2021
+  grid        : a%1.9x2.5_l%1.9x2.5_oi%1.9x2.5_r%r05_g%null_w%null_m%gx1v7
+  compset     : 2000_CAM60%PTAERO_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV
+  run_type    : startup, continue_run = FALSE (inittype = TRUE)
+  stop_option : nmonths, stop_n = 1
+  run_length  : 31 days (30.9791666667 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride) 
+  ---------        ------     -------   ------   ------  ---------  ------  
+  cpl = cpl        896         0        896    x 1       1      (1     ) 
+  atm = cam        896         0        896    x 1       1      (1     ) 
+  lnd = clm        896         0        896    x 1       1      (1     ) 
+  ice = cice       896         0        896    x 1       1      (1     ) 
+  ocn = docn       896         0        896    x 1       1      (1     ) 
+  rof = mosart     896         0        896    x 1       1      (1     ) 
+  glc = sglc       896         0        896    x 1       1      (1     ) 
+  wav = swav       896         0        896    x 1       1      (1     ) 
+  esp = sesp       896         0        896    x 1       1      (1     ) 
+
+  total pes active           : 896 
+  mpi tasks per node               : 128 
+  pe count for cost estimate : 896 
+
+  Overall Metrics: 
+    Model Cost:             661.09   pe-hrs/simulated_year 
+    Model Throughput:        32.53   simulated_years/day 
+
+    Init Time   :     117.691 seconds 
+    Run Time    :     225.593 seconds        7.277 seconds/day 
+    Final Time  :       0.022 seconds 
+
+    Actual Ocn Init Wait Time     :       0.279 seconds 
+    Estimated Ocn Init Run Time   :       0.000 seconds 
+    Estimated Run Time Correction :       0.000 seconds 
+      (This correction has been applied to the ocean and total run times) 
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day 
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components 
+
+    TOT Run Time:     225.593 seconds        7.277 seconds/mday        32.53 myears/wday 
+    CPL Run Time:       7.571 seconds        0.244 seconds/mday       969.24 myears/wday 
+    ATM Run Time:     205.589 seconds        6.632 seconds/mday        35.69 myears/wday 
+    LND Run Time:       8.290 seconds        0.267 seconds/mday       885.17 myears/wday 
+    ICE Run Time:       1.667 seconds        0.054 seconds/mday      4401.97 myears/wday 
+    OCN Run Time:       0.249 seconds        0.008 seconds/mday     29450.40 myears/wday 
+    ROF Run Time:       1.397 seconds        0.045 seconds/mday      5252.74 myears/wday 
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    CPL COMM Time:     22.702 seconds        0.732 seconds/mday       323.24 myears/wday 
+
+
+---------------- DRIVER TIMING FLOWCHART --------------------- 
+
+   NOTE: min:max driver timers (seconds/day):   
+                            CPL (pes 0 to 895) 
+                                                OCN (pes 0 to 895) 
+                                                LND (pes 0 to 895) 
+                                                ROF (pes 0 to 895) 
+                                                ICE (pes 0 to 895) 
+                                                ATM (pes 0 to 895) 
+                                                GLC (pes 0 to 895) 
+                                                WAV (pes 0 to 895) 
+
+  CPL:CLOCK_ADVANCE           0.005:   0
