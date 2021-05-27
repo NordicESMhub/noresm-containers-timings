@@ -1,27 +1,630 @@
-platform,case,pe-count,cost,throughput,initime,runtime,finaltime
-betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,804.74,22.9,89.365,320.38,0.042
-betzy_gnu-noresm,NF2000climo-f19_f19_mg17,256,654.31,9.39,71.047,781.472,0.274
-betzy_gnu-noresm,NF2000climo-f19_f19_mg17,128,609.34,5.04,84.778,1455.521,0.121
-betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,703.35,17.47,65.676,420.02,0.39
-betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,763.46,20.12,82.228,364.735,0.122
-betzy_gnu-noresm,NF2000climo-f19_f19_mg17,384,672.73,13.7,72.238,535.65,0.077
-betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,847.51,29.0,80.209,253.057,0.082
-betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,819.48,26.24,74.86,279.64,0.081
-betzy-noresm,NF2000climo-f19_f19_mg17,768,662.9,27.81,83.589,263.91,0.057
-betzy-noresm,NF2000climo-f19_f19_mg17,896,637.52,33.73,80.944,217.548,0.024
-betzy-noresm,NF2000climo-f19_f19_mg17,1024,700.64,35.08,72.957,209.202,0.025
-betzy-noresm,NF2000climo-f19_f19_mg17,768,667.37,27.62,83.134,265.689,0.005
-betzy-noresm,NF2000climo-f19_f19_mg17,384,524.82,17.56,88.475,417.879,0.016
-betzy-noresm,NF2000climo-f19_f19_mg17,640,608.61,25.24,84.203,290.759,0.004
-betzy-noresm,NF2000climo-f19_f19_mg17,256,491.79,12.49,75.672,587.367,0.045
-betzy-noresm,NF2000climo-f19_f19_mg17,128,443.03,6.93,88.56,1058.255,0.128
-betzy-noresm,NF2000climo-f19_f19_mg17,512,561.02,21.9,71.426,335.025,0.041
-betzy-noresm,NF2000climo-f19_f19_mg17,1024,700.52,35.08,82.478,209.167,0.206
-noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,527.86,5.82,124.921,1260.895,0.005
-noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,656.16,28.09,116.232,261.227,0.003
-noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,552.17,16.69,125.754,439.659,0.004
-noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,573.8,21.42,125.193,342.657,0.053
-noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,896,661.09,32.53,117.691,225.593,0.022
-noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,607.56,25.28,122.931,290.257,0.004
-noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,694.55,35.38,111.314,207.383,0.004
-noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,520.95,11.79,121.115,622.191,0.004
+platform,case,pe-count,cost,throughput,initime,runtime,finaltime,type
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,764.91,20.08,71.675,365.427,0.065,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,851.91,28.85,73.073,254.369,0.098,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,763.46,20.12,82.228,364.735,0.122,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,128,609.34,5.04,84.778,1455.521,0.121,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,808.93,26.58,65.849,276.04,0.013,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,814.8,26.39,66.953,278.046,0.132,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,256,654.31,9.39,71.047,781.472,0.274,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,850.37,28.9,457.495,253.911,0.068,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,811.39,26.5,69.334,276.881,0.499,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,858.39,25.05,67.869,292.92,0.133,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,790.96,23.3,69.059,314.895,0.126,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,843.99,29.12,69.366,252.006,0.197,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,709.92,17.31,81.386,423.945,0.114,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,805.84,26.69,64.476,274.988,0.544,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,709.54,17.32,70.053,423.717,0.13,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,800.88,26.85,73.434,273.293,0.169,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,817.77,22.54,67.137,325.569,0.097,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,707.18,17.38,71.449,422.312,0.231,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,764.57,20.09,64.029,365.266,0.076,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,854.46,28.76,67.211,255.132,0.138,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,384,680.16,13.55,62.697,541.563,0.078,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,713.73,17.22,65.866,426.224,0.109,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,801.98,22.98,66.569,319.282,0.089,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,915.04,16.79,68.009,437.15,0.095,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,819.48,26.24,74.86,279.64,0.081,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,256,656.05,9.37,72.838,783.549,0.277,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,806.69,22.85,82.683,321.155,0.072,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,758.79,20.24,100.582,362.504,0.381,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,809.59,26.56,68.773,276.265,0.715,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,384,710.45,12.97,67.163,565.683,0.05,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,757.38,20.28,77.556,361.83,0.067,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,849.01,28.95,69.256,253.505,0.143,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,768.32,19.99,67.118,367.057,0.072,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,847.51,29.0,80.209,253.057,0.082,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,697.51,17.62,66.895,416.533,0.069,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,857.17,21.5,63.843,341.254,0.131,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,807.37,26.63,68.098,275.51,0.063,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,842.81,29.16,66.703,251.652,0.009,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,840.86,29.23,74.829,251.07,0.064,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,810.84,26.52,66.913,276.692,0.24,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,759.87,20.21,63.835,363.019,0.066,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,815.05,26.38,66.25,278.131,0.213,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,842.74,29.16,66.902,251.63,0.124,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,384,681.66,13.52,67.569,542.758,0.108,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,767.94,20.0,69.072,366.875,0.706,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,843.47,29.14,69.854,251.848,0.076,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,868.11,24.77,74.57,296.235,0.12,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,793.75,19.35,73.927,379.206,0.066,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,847.62,28.99,69.185,253.089,0.248,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,698.53,17.59,74.275,417.145,0.031,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,128,608.84,5.05,70.036,1454.325,0.105,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,704.15,17.45,68.064,420.502,0.1,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,811.21,22.72,65.655,322.956,0.034,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,808.39,22.8,69.572,321.834,0.01,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,805.91,26.68,73.839,275.012,0.074,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,800.83,23.02,70.841,318.824,0.103,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,832.47,29.52,69.215,248.566,0.121,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,722.78,17.0,69.107,431.627,0.392,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,771.85,19.9,64.076,368.745,0.029,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,967.1,25.41,104.518,288.764,0.074,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,798.3,23.09,65.006,317.816,0.067,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,753.22,20.39,82.38,359.845,0.083,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,742.93,20.67,65.52,354.928,0.135,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,702.73,17.49,68.024,419.651,0.103,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,800.65,26.86,65.967,273.215,0.245,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,640,746.28,20.58,66.009,356.529,1.298,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,384,672.73,13.7,72.238,535.65,0.077,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,816.79,26.33,73.826,278.725,0.269,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,805.25,22.89,69.772,320.582,0.055,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,805.79,22.87,67.884,320.799,4.037,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,811.37,26.5,80.302,276.874,0.08,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,1024,844.0,29.12,76.36,252.008,0.099,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,384,692.73,13.3,67.069,551.576,0.699,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,896,813.78,26.42,70.432,277.697,0.109,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,971.91,18.96,139.624,386.933,0.12,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,703.35,17.47,65.676,420.02,0.39,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,512,746.49,16.46,77.229,445.787,0.083,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,804.74,22.9,89.365,320.38,0.042,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,809.55,22.77,65.209,322.297,0.07,bare metal
+betzy_gnu-noresm,NF2000climo-f19_f19_mg17,768,881.9,20.9,68.732,351.099,0.071,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,659.46,27.95,78.67,262.543,0.017,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,128,447.67,6.86,90.553,1069.358,0.01,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,547.2,22.46,78.266,326.772,0.029,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,602.49,25.49,90.228,287.833,0.105,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,128,449.01,6.84,86.752,1072.561,0.025,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,256,488.84,12.57,84.827,583.841,0.015,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,384,522.87,17.63,85.475,416.328,0.003,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,639.05,33.65,77.849,218.07,0.072,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,697.99,35.21,81.52,208.41,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,545.2,22.54,86.739,325.58,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,384,523.39,17.61,88.291,416.741,0.021,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,704.56,34.88,68.969,210.373,0.041,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,613.88,25.02,78.968,293.277,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,602.75,25.48,76.906,287.959,0.033,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,128,447.09,6.87,89.864,1067.974,0.031,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,546.59,22.48,79.558,326.408,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,384,524.49,17.57,82.952,417.614,0.007,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,658.95,27.97,85.862,262.34,0.029,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,384,522.16,17.65,79.759,415.764,0.019,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,635.1,33.86,83.979,216.723,0.056,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,384,524.0,17.59,78.978,417.227,0.037,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,700.64,35.08,72.957,209.202,0.025,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,653.78,28.19,77.233,260.281,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,256,490.23,12.53,84.934,585.503,0.023,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,384,524.82,17.56,88.475,417.879,0.016,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,128,447.63,6.86,83.072,1069.25,0.011,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,256,489.41,12.55,91.133,584.524,0.169,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,256,490.02,12.54,80.477,585.26,0.007,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,693.11,35.46,79.56,206.955,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,384,524.13,17.58,79.574,417.33,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,609.52,25.2,79.838,291.19,0.015,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,727.7,33.77,86.519,217.283,0.049,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,545.53,22.52,85.863,325.778,0.114,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,256,491.79,12.49,75.672,587.367,0.045,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,256,486.54,12.63,77.108,581.095,0.007,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,384,525.42,17.54,81.89,418.36,0.092,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,256,488.12,12.59,90.394,582.987,0.033,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,662.9,27.81,83.589,263.91,0.057,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,545.18,22.54,76.436,325.568,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,632.85,33.98,76.798,215.956,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,604.39,25.41,78.646,288.741,0.008,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,693.99,35.41,86.285,207.216,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,128,448.57,6.85,99.565,1071.487,0.011,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,637.52,33.73,80.944,217.548,0.024,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,256,490.1,12.54,81.226,585.352,0.008,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,660.55,32.55,79.539,225.407,0.024,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,128,449.07,6.84,86.878,1072.703,0.097,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,128,446.26,6.88,87.295,1065.983,0.024,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,730.91,33.62,78.874,218.239,0.005,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,656.93,28.06,80.094,261.533,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,608.61,25.24,84.203,290.759,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,384,527.12,17.48,79.191,419.712,0.007,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,651.39,33.01,79.19,222.283,0.059,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,256,486.65,12.62,75.634,581.235,0.007,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,547.85,22.43,81.497,327.164,0.028,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,546.42,22.49,80.327,326.31,0.017,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,611.35,25.12,78.235,292.067,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,690.72,35.58,80.106,206.241,0.02,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,633.24,33.96,76.675,216.088,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,714.71,34.39,70.995,213.404,0.023,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,656.55,32.75,94.957,224.043,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,128,443.03,6.93,88.56,1058.255,0.128,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,604.95,25.39,78.476,289.009,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,693.18,35.45,82.543,206.974,0.015,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,653.82,28.19,76.824,260.297,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,546.94,22.47,79.898,326.618,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,700.52,35.08,82.478,209.167,0.206,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,656.23,28.09,81.488,261.257,0.017,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,656.84,28.06,78.556,261.499,0.018,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,698.88,35.16,82.169,208.677,0.005,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,639.78,33.61,79.654,218.321,0.015,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,636.42,33.79,85.884,217.174,0.019,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,547.08,22.46,75.476,326.702,0.26,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,721.77,34.05,90.761,215.511,0.007,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,636.03,33.81,77.227,217.042,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,728.23,33.75,80.727,217.439,0.078,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,608.1,25.26,77.274,290.513,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,610.01,25.18,76.018,291.428,0.003,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,550.2,22.33,79.89,328.566,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,128,438.43,7.01,89.444,1047.284,0.01,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,656.39,28.08,89.36,261.321,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,548.08,22.42,79.99,327.298,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,547.29,22.45,79.693,326.829,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,547.78,22.43,78.389,327.123,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,256,490.09,12.54,81.67,585.336,0.019,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,128,447.18,6.87,87.264,1068.169,0.096,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,656.08,28.09,80.161,261.198,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,693.63,35.43,83.48,207.109,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,696.03,35.31,81.557,207.825,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,610.09,25.18,79.287,291.464,0.042,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,128,452.12,6.79,95.04,1079.971,0.04,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,640,605.39,25.37,85.099,289.22,0.023,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,640.89,33.55,79.093,218.7,0.005,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,667.37,27.62,83.134,265.689,0.005,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,384,525.63,17.53,81.975,418.522,0.069,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,729.73,33.68,85.399,217.889,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,256,487.19,12.61,96.462,581.881,0.104,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,384,525.81,17.53,83.987,418.668,0.03,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,768,660.18,27.92,79.607,262.827,0.047,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,561.02,21.9,71.426,335.025,0.041,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,694.54,35.38,81.97,207.382,0.004,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,1024,720.77,34.1,77.52,215.213,0.553,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,639.99,33.6,79.074,218.393,0.053,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,896,637.17,33.75,76.248,217.429,0.006,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,550.56,22.32,86.401,328.783,0.126,bare metal
+betzy-noresm,NF2000climo-f19_f19_mg17,512,547.64,22.44,78.819,327.036,0.004,bare metal
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,520.25,11.81,131.101,621.36,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,690.98,35.57,131.193,206.318,0.007,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,521.07,11.79,122.441,622.335,0.029,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,654.98,28.14,126.235,260.76,0.029,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,568.86,21.6,141.019,339.708,0.006,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,549.78,16.76,137.654,437.754,0.01,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,550.93,16.73,131.735,438.672,0.01,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,896,659.93,32.59,122.63,225.197,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,656.16,28.09,116.232,261.227,0.003,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,526.09,5.84,125.065,1256.672,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,519.39,11.83,129.51,620.339,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,610.85,25.15,119.453,291.827,0.006,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,523.88,11.73,139.288,625.701,0.024,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,474.68,6.47,107.721,1133.861,0.003,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,523.91,11.73,126.762,625.734,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,530.12,5.79,125.315,1266.295,0.044,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,518.95,11.84,135.182,619.807,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,611.73,25.11,134.178,292.247,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,527.84,5.82,124.717,1260.848,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,523.48,11.74,134.173,625.214,0.007,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,689.8,35.63,123.998,205.966,0.085,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,522.89,5.88,134.919,1249.033,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,554.18,16.63,135.47,441.256,0.006,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,522.56,5.88,123.095,1248.236,0.006,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,530.46,5.79,129.39,1267.108,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,657.01,28.05,128.617,261.566,0.009,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,691.73,35.53,128.972,206.542,0.015,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,686.78,35.78,126.119,205.065,0.0,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,567.19,21.66,130.724,338.713,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,694.55,35.38,111.314,207.383,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,611.36,25.12,125.646,292.07,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,689.42,35.65,118.764,205.851,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,520.6,11.8,137.595,621.776,0.029,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,689.1,35.66,127.291,205.758,0.14,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,896,655.05,32.83,119.603,223.53,0.021,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,562.13,21.86,129.996,335.688,0.003,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,569.62,21.57,140.883,340.161,0.006,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,610.67,25.15,123.78,291.739,0.007,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,896,657.68,32.7,123.025,224.43,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,611.39,25.12,127.877,292.085,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,527.02,5.83,124.058,1258.893,0.003,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,569.04,21.59,139.721,339.816,0.006,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,655.81,28.11,124.169,261.087,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,524.82,5.85,126.419,1253.625,0.028,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,654.17,28.18,128.29,260.436,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,686.33,35.81,127.866,204.929,0.06,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,521.07,11.79,122.441,622.335,0.029,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,896,654.26,32.87,119.133,223.263,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,561.11,21.9,137.851,335.079,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,557.33,16.54,134.51,443.764,0.007,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,659.76,27.94,127.475,262.66,0.007,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,695.39,35.34,122.345,207.634,0.08,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,566.73,21.68,136.818,338.434,0.008,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,566.5,21.69,139.432,338.301,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,695.39,35.34,122.345,207.634,0.08,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,553.14,16.66,138.804,440.429,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,656.41,28.08,124.535,261.329,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,521.31,11.79,132.13,622.63,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,553.14,16.66,138.804,440.429,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,563.26,21.82,129.932,336.366,0.007,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,690.58,35.59,128.388,206.199,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,896,655.28,32.82,126.139,223.61,0.141,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,655.34,28.13,130.622,260.9,0.025,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,573.8,21.42,125.193,342.657,0.053,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,607.56,25.28,122.931,290.257,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,527.86,5.82,124.921,1260.895,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,611.36,25.12,125.646,292.07,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,685.28,35.86,125.337,204.616,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,896,655.28,32.82,125.964,223.609,0.003,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,552.51,16.68,138.813,439.927,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,521.5,11.78,131.1,622.849,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,613.06,25.05,114.384,292.884,0.003,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,565.63,21.72,135.313,337.777,0.008,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,554.01,16.64,132.722,441.122,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,611.19,25.13,127.418,291.989,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,567.62,21.65,140.51,338.969,0.01,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,552.51,16.68,138.813,439.927,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,565.76,21.72,144.885,337.856,0.006,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,524.57,5.86,124.05,1253.05,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,896,657.68,32.7,123.025,224.43,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,612.43,25.08,123.075,292.582,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,552.04,16.69,134.15,439.552,0.006,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,685.28,35.86,125.337,204.616,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,656.3,28.08,128.522,261.284,0.003,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,553.27,16.66,134.774,440.534,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,896,655.3,32.82,123.584,223.616,0.007,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,515.95,11.91,135.928,616.22,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,612.92,25.06,124.794,292.817,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,660.93,27.89,133.516,263.129,0.01,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,656.56,28.07,125.132,261.389,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,520.97,5.9,124.295,1244.449,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,520.6,11.8,137.595,621.776,0.029,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,520.95,11.79,121.115,622.191,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,256,520.78,11.8,132.367,621.989,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,525.88,5.84,126.824,1256.163,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,615.8,24.94,131.879,294.194,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,611.67,25.11,123.849,292.22,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,552.17,16.69,125.754,439.659,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,553.43,16.65,133.514,440.663,0.007,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,568.53,21.61,136.331,339.511,0.007,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,656.3,28.08,128.522,261.284,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,555.21,16.6,132.066,442.076,0.008,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,527.53,5.82,123.429,1260.121,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,690.58,35.59,128.388,206.199,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,665.89,27.68,126.361,265.1,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,128,525.88,5.84,126.824,1256.163,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,896,651.96,32.98,125.452,222.476,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,512,568.53,21.61,136.331,339.511,0.007,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,640,611.36,25.12,125.646,292.07,0.004,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,1024,690.55,35.59,119.46,206.189,0.059,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,896,661.09,32.53,117.691,225.593,0.022,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,657.52,28.03,128.455,261.768,0.019,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,768,665.89,27.68,126.361,265.1,0.005,singularity
+noresm-gnu-ucx-mpich-container,NF2000climo-f19_f19_mg17,384,557.33,16.54,134.51,443.764,0.007,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,472.06,6.51,101.937,1127.601,0.006,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,384,549.5,16.77,113.014,437.526,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,689.64,26.73,112.179,274.558,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,585.14,21.0,115.079,349.428,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,641.07,23.96,112.587,306.264,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,701.84,30.64,113.045,239.499,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,470.53,6.53,104.395,1123.963,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,256,513.0,11.98,109.171,612.697,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,703.79,26.19,113.546,280.192,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,697.98,26.41,111.604,277.878,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,710.37,30.27,112.959,242.409,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,580.37,21.17,111.216,346.581,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,477.98,6.43,102.478,1141.759,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,640.88,23.97,112.72,306.176,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,627.68,24.47,111.281,299.868,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,697.46,30.83,112.937,238.003,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,691.21,31.11,114.168,235.871,0.005,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,581.41,21.13,114.496,347.202,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,573.8,21.42,114.333,342.657,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,698.09,26.4,115.351,277.923,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,705.86,30.46,115.217,240.871,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,704.43,30.53,115.43,240.383,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,691.23,31.11,113.733,235.877,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,579.84,21.19,112.503,346.265,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,472.06,6.51,101.937,1127.601,0.006,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,702.12,26.25,114.162,279.527,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,462.31,6.64,102.887,1104.319,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,638.58,24.05,111.726,305.077,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,695.61,30.91,113.22,237.373,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,640.69,23.97,113.722,306.082,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,634.07,24.22,111.862,302.921,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,707.62,30.39,113.846,241.471,0.008,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,714.55,30.09,113.89,243.835,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,700.36,30.7,115.233,238.992,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,646.31,23.77,112.824,308.768,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,701.67,26.27,112.285,279.345,0.005,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,582.91,21.08,110.936,348.101,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,696.24,30.89,111.545,237.586,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,709.66,30.3,112.887,242.167,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,1024,912.22,26.94,135.492,272.377,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,582.91,21.08,110.936,348.101,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,477.89,6.43,102.674,1141.544,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,585.36,20.99,111.392,349.564,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,641.07,23.96,112.587,306.264,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,711.34,30.23,114.471,242.74,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,700.36,30.7,115.233,238.992,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,639.69,24.01,112.795,305.604,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,702.24,30.62,112.016,239.634,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,384,549.5,16.77,113.014,437.526,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,695.61,30.91,113.22,237.373,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,690.65,31.14,111.603,235.678,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,568.48,21.62,112.97,339.483,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,477.89,6.43,102.674,1141.544,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,700.6,26.31,112.632,278.921,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,712.98,30.16,114.424,243.299,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,256,506.17,12.14,115.043,604.545,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,475.26,6.46,102.929,1135.263,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,700.73,26.3,113.153,278.974,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,693.42,31.01,112.812,236.623,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,703.92,30.55,112.721,240.206,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,581.71,21.12,114.942,347.383,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,703.53,30.57,111.528,240.075,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,690.65,31.14,111.603,235.678,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,583.49,21.06,111.612,348.446,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,711.34,30.23,114.471,242.74,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,568.48,21.62,112.97,339.483,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,581.66,21.13,114.403,347.35,0.003,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,585.7,20.98,112.847,349.768,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,704.44,30.53,112.982,240.385,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,691.16,31.11,114.199,235.854,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,705.28,30.49,113.86,240.67,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,691.23,31.11,113.733,235.877,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,700.67,30.69,113.769,239.1,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,710.17,30.28,117.731,242.34,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,699.36,26.36,113.786,278.425,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,634.86,24.19,111.114,303.298,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,578.43,21.24,111.612,345.422,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,643.36,23.87,113.367,307.357,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,703.79,26.19,113.546,280.192,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,707.38,30.4,112.118,241.387,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,581.66,21.13,114.403,347.35,0.003,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,712.98,30.16,114.424,243.299,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,704.35,26.17,111.987,280.414,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,641.39,23.95,114.328,306.418,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,642.23,23.92,113.337,306.818,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,699.86,26.34,115.13,278.625,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,642.01,23.92,113.458,306.712,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,583.49,21.06,111.612,348.446,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,700.65,30.69,113.702,239.09,0.0,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,256,513.22,11.97,114.461,612.966,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,640.69,23.97,113.722,306.082,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,573.8,21.42,114.333,342.657,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,696.13,30.89,112.875,237.549,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,708.24,30.36,115.11,241.681,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,578.38,21.25,114.797,345.394,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,384,560.18,16.45,112.575,446.032,0.0,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,697.78,30.82,110.959,238.112,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,691.16,31.11,114.199,235.854,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,1024,893.37,27.51,137.071,266.749,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,462.31,6.64,102.887,1104.319,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,639.24,24.03,110.851,305.389,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,581.41,21.13,114.496,347.202,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,692.09,26.63,111.603,275.532,0.005,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,702.12,26.25,114.162,279.527,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,1024,888.8,27.65,137.537,265.385,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,577.38,21.28,114.841,344.796,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,580.88,21.15,112.746,346.884,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,707.46,30.4,114.828,241.415,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,256,513.22,11.97,114.461,612.966,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,697.78,30.82,110.959,238.112,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,256,513.0,11.98,109.171,612.697,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,579.84,21.19,112.503,346.265,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,698.65,26.38,112.632,278.145,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,646.31,23.77,112.824,308.768,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,696.18,26.48,112.6,277.159,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,709.29,25.99,113.657,282.38,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,637.61,24.09,112.042,304.61,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,711.24,30.23,114.813,242.705,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,476.07,6.45,108.452,1137.176,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,703.92,30.55,112.721,240.206,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,698.09,26.4,115.351,277.923,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,581.01,21.15,109.444,346.965,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,578.43,21.24,111.612,345.422,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,474.41,6.48,101.32,1133.226,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,706.73,30.43,114.714,241.166,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,577.38,21.28,114.841,344.796,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,634.07,24.22,111.862,302.921,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,642.01,23.92,113.458,306.712,0.002,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,583.97,21.04,111.994,348.733,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,707.62,30.39,113.846,241.471,0.008,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,256,506.17,12.14,115.043,604.545,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,700.6,26.31,112.632,278.921,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,699.36,26.36,113.786,278.425,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,384,549.34,16.78,113.529,437.405,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,512,578.21,21.25,109.869,345.293,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,705.62,30.48,111.996,240.786,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,697.46,30.83,112.937,238.003,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,692.07,26.63,112.936,275.526,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,128,473.01,6.49,100.265,1129.887,0.005,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,692.07,26.63,112.936,275.526,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,896,706.73,30.43,114.714,241.166,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,1024,888.8,27.65,137.537,265.385,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,768,709.29,25.99,113.657,282.38,0.004,singularity
+noresm-gnu-ucx-openmpi-container,NF2000climo-f19_f19_mg17,640,639.69,24.01,112.795,305.604,0.002,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,679.94,31.63,117.814,232.024,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,569.98,21.56,110.234,340.378,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,1024,903.84,27.19,152.666,269.875,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,630.27,24.37,115.446,301.107,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,682.9,31.49,118.339,233.035,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,565.65,21.72,113.219,337.794,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,683.49,31.46,117.715,233.237,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,768,698.76,26.38,116.708,278.187,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,567.1,21.67,113.559,338.659,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,625.78,24.55,112.026,298.962,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,1024,888.1,27.67,150.325,265.174,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,683.53,31.46,119.767,233.248,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,574.38,21.39,111.031,343.007,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,444.23,6.92,109.774,1061.139,0.007,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,569.98,21.56,110.234,340.378,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,489.66,12.55,103.435,584.827,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,768,699.31,26.36,114.697,278.408,0.007,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,564.98,21.75,109.345,337.39,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,1024,919.49,26.73,151.577,274.547,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,565.53,21.73,111.859,337.719,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,570.27,21.55,114.643,340.551,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,444.6,6.91,109.197,1062.008,0.007,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,1024,888.41,27.66,151.197,265.269,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,563.23,21.82,109.262,336.347,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,1024,890.19,27.61,150.471,265.799,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,443.63,6.92,115.166,1059.699,0.008,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,569.05,21.59,109.608,339.82,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,1024,931.56,26.38,157.658,278.152,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,445.91,6.89,102.009,1065.156,0.007,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,1024,900.66,27.29,153.487,268.926,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,447.61,6.86,107.891,1069.2,0.007,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,567.82,21.64,108.793,339.089,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,768,695.72,26.49,116.495,276.978,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,491.29,12.51,108.193,586.771,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,490.15,12.53,110.688,585.414,0.007,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,768,696.26,26.47,114.728,277.191,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,491.85,12.49,107.008,587.437,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,626.55,24.52,117.893,299.33,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,491.52,12.5,104.1,587.044,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,630.29,24.37,112.984,301.113,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,569.62,21.57,117.472,340.165,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,567.12,21.67,112.3,338.672,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,490.7,12.52,103.108,586.062,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,488.72,12.57,112.422,583.698,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,627.21,24.49,111.316,299.645,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,686.02,31.35,120.21,234.098,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,489.17,12.56,107.889,584.234,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,629.82,24.39,111.835,300.889,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,683.77,31.45,120.612,233.331,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,569.72,21.57,110.427,340.223,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,685.32,31.38,120.693,233.859,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,629.13,24.41,120.118,300.562,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,1024,891.63,27.56,150.098,266.23,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,566.78,21.68,113.493,338.469,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,490.57,12.52,105.988,585.906,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,683.7,31.45,122.257,233.309,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,1024,900.58,27.29,151.943,268.902,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,683.49,31.46,117.715,233.237,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,490.7,12.52,103.108,586.062,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,568.12,21.63,107.791,339.264,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,445.51,6.9,106.535,1064.186,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,493.01,12.46,108.754,588.826,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,438.88,7.0,109.346,1048.361,0.008,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,684.99,31.39,118.439,233.747,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,768,698.55,26.39,116.581,278.104,0.0,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,768,696.89,26.45,116.538,277.445,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,625.78,24.55,112.026,298.962,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,445.36,6.9,106.384,1063.831,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,566.45,21.69,112.83,338.27,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,443.0,6.93,110.45,1058.189,0.007,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,685.08,31.39,128.489,233.78,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,768,701.32,26.28,122.677,279.208,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,569.72,21.57,110.427,340.223,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,489.17,12.56,107.889,584.234,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,449.65,6.83,103.747,1074.085,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,443.63,6.92,115.166,1059.699,0.008,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,768,699.99,26.33,102.369,278.676,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,768,697.69,26.42,118.039,277.761,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,434.0,7.08,109.644,1036.693,0.007,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,628.98,24.42,110.397,300.491,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,567.1,21.67,113.559,338.659,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,1024,897.21,27.39,156.44,267.896,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,768,698.59,26.38,117.144,278.122,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,629.51,24.4,112.641,300.74,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,566.9,21.68,109.489,338.541,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,493.89,12.44,108.257,589.878,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,488.72,12.57,112.422,583.698,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,1024,890.81,27.59,151.429,265.985,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,566.99,21.67,112.911,338.591,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,896,692.6,31.05,119.421,236.346,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,629.09,24.42,111.779,300.542,0.004,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,640,627.87,24.46,113.417,299.96,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,128,434.0,7.08,109.644,1036.693,0.007,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,256,490.57,12.52,105.988,585.906,0.006,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,768,698.59,26.38,117.144,278.122,0.005,singularity
+noresm-intel-openmpi-container,NF2000climo-f19_f19_mg17,512,564.46,21.77,115.278,337.081,0.005,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,665.22,27.71,130.359,264.835,0.037,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,465.67,6.6,121.116,1112.34,0.01,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,496.31,12.38,122.857,592.764,0.005,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,896,642.91,33.45,123.3,219.387,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,497.64,12.35,134.787,594.355,0.005,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,512,552.19,22.25,139.216,329.754,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,465.06,6.61,129.753,1110.887,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,896,639.81,33.61,119.791,218.33,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,896,641.4,33.53,123.319,218.872,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,663.3,27.79,127.815,264.071,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,512,550.77,22.31,136.63,328.903,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,499.25,12.31,134.089,596.276,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,640,606.88,25.31,123.942,289.929,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,669.04,27.55,132.763,266.354,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,896,639.77,33.61,124.238,218.317,0.048,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,896,643.35,33.43,126.834,219.538,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,665.01,27.72,130.349,264.751,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,494.86,12.42,134.186,591.03,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,459.61,6.68,132.244,1097.864,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,465.04,6.61,120.302,1110.846,0.008,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,670.32,27.5,126.427,266.864,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,640,606.73,25.32,125.673,289.858,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,512,545.58,22.52,135.043,325.805,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,497.65,12.35,139.755,594.364,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,667.5,27.61,131.123,265.744,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,694.2,35.4,121.207,207.279,0.041,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,465.79,6.6,122.718,1112.624,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,697.79,35.22,132.898,208.35,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,896,640.8,33.56,122.988,218.669,0.008,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,501.21,12.26,129.854,598.616,0.005,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,640,614.12,25.01,125.435,293.389,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,465.79,6.6,122.718,1112.624,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,500.45,12.28,136.842,597.71,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,663.34,27.79,128.456,264.085,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,464.91,6.61,120.049,1110.538,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,697.78,35.22,123.672,208.347,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,496.27,12.38,133.639,592.715,0.005,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,896,647.2,33.23,122.741,220.852,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,640,605.99,25.35,123.679,289.505,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,696.23,35.3,110.805,207.886,0.009,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,464.43,6.61,125.805,1109.388,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,660.96,27.89,130.605,263.141,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,497.65,12.35,139.755,594.364,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,700.11,35.1,126.768,209.045,0.008,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,640,604.58,25.41,123.245,288.833,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,896,642.91,33.45,123.3,219.387,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,733.9,25.12,117.364,292.179,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,669.04,27.55,132.763,266.354,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,696.61,35.28,123.71,207.999,0.037,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,512,546.27,22.49,133.754,326.218,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,640,601.39,25.54,126.596,287.307,0.01,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,512,545.58,22.52,135.043,325.805,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,640,605.63,25.36,126.161,289.333,0.009,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,664.5,27.74,126.271,264.55,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,512,540.83,22.72,136.086,322.968,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,697.79,35.22,132.898,208.35,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,465.96,6.59,127.951,1113.033,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,497.39,12.35,129.073,594.054,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,664.15,27.75,122.758,264.409,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,512,552.19,22.25,140.074,329.752,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,463.97,6.62,126.06,1108.294,0.031,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,497.89,12.34,135.098,594.652,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,693.9,35.42,120.003,207.191,0.008,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,640,614.12,25.01,125.435,293.389,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,464.43,6.61,125.805,1109.388,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,697.06,35.26,113.857,208.132,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,464.24,6.62,129.204,1108.935,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,896,641.19,33.54,123.588,218.8,0.031,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,698.58,35.18,115.096,208.588,0.008,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,464.29,6.62,113.415,1109.047,0.035,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,640,607.93,25.27,122.911,290.434,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,512,544.64,22.56,140.003,325.248,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,128,465.03,6.61,113.689,1110.827,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,697.06,35.26,113.857,208.132,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,665.29,27.71,132.916,264.864,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,497.67,12.35,127.406,594.39,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,896,644.22,33.38,120.09,219.837,0.022,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,512,547.68,22.44,135.161,327.06,0.005,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,640,606.88,25.31,123.942,289.929,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,640,601.38,25.54,125.187,287.303,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,667.32,27.62,130.638,265.672,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,698.58,35.18,115.096,208.588,0.008,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,697.43,35.24,121.53,208.244,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,665.29,27.71,132.916,264.864,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,498.13,12.33,129.665,594.942,0.004,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,768,665.01,27.72,130.349,264.751,0.007,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,697.78,35.22,123.672,208.347,0.006,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,1024,696.03,35.31,125.355,207.825,0.009,singularity
+noresm-intel-mpich-container,NF2000climo-f19_f19_mg17,256,498.65,12.32,137.219,595.563,0.004,singularity
